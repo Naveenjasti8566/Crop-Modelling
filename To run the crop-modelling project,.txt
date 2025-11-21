@@ -1,0 +1,44 @@
+To run the crop-modelling project, open the project folder on either Windows or Mac and run the crop_model.py file using Python. The program will automatically select one of the parameter files—parameters.csv, parameters_drought.csv, parameters_high_yield.csv, or parameters_early_variety.csv—depending on the scenario you choose. After the model finishes running, all output files will appear in the results folder. These include:
+
+simulation_results.csv — daily crop growth data
+B
+weather_data.csv — the weather used during the run
+
+run_summary.csv — a summary of the final results
+
+crop_simulation_results.png — a plot showing crop growth over time
+
+These files make it easy to understand how the model behaves and to compare different scenarios.
+
+Option 1: Using Command Line/Terminal (Linux/Mac)
+# Step 0: Go to Directory Path
+# Step 1: Create virtual environment
+python3 -m venv crop_env
+
+# Step 2: Activate environment
+source crop_env/bin/activate
+
+# Step 3: Install dependencies
+pip install numpy pandas matplotlib
+
+# Step 4: Run simulation
+python crop_model.py
+
+Option 2: Using PowerShell (Windows)
+# Step 0: Go to Directory Path
+cd <directory path>
+
+# Step 1: Create virtual environment
+python -m venv crop_env
+
+# Step 1.1: Set Execution Policy to run PowerShell script
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+# Step 2: Activate environment
+crop_env\Scripts\Activate.ps1
+
+# Step 3: Install dependencies
+pip install numpy pandas matplotlib
+
+# Step 4: Run simulation
+python crop_model.py
