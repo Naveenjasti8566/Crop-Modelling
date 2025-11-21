@@ -1,0 +1,19 @@
+parameter_type,parameter_name,value,description
+crop,base_temp,9,Base temperature for GDD calculation (°C) - cold tolerant
+crop,gdd_emergence,85,GDD required for emergence - quick emergence
+crop,gdd_flowering,650,GDD required for flowering - early flowering
+crop,gdd_maturity,1100,GDD required for maturity - early maturity
+crop,max_biomass_rate,280,Maximum daily biomass accumulation (kg/ha/day)
+crop,harvest_index,0.46,Grain to total biomass ratio
+soil,field_capacity,250,Maximum soil water storage (mm)
+soil,wilting_point,100,Minimum available soil water (mm)
+soil,initial_water,200,Initial soil water content (mm)
+weather,base_temperature,22,Base temperature for weather generation (°C) - cooler
+weather,temp_variation,5,Temperature seasonal variation amplitude (°C)
+weather,rainfall_rate,15,Average rainfall intensity (mm/event)
+weather,dry_day_probability,0.7,Probability of no rainfall (0-1)
+weather,solar_base,19,Base solar radiation (MJ/m²/day) - slightly lower
+weather,solar_variation,5,Solar radiation seasonal variation (MJ/m²/day)
+simulation,days,100,Simulation duration (days) - shorter season
+simulation,start_date,2024-04-01,Simulation start date
+simulation,random_seed,300,Random seed for reproducible results
